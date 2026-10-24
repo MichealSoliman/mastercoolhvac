@@ -142,11 +142,69 @@
           },
           "description": "خدمات هندسية متكاملة لصيانة وتصليح المكيفات بجدة تشمل الفحص الكهروميكانيكي الرقمي، إصلاح كروت الإنفرتر، فحص ضغوط الفريون، صيانة الكمبروسر، تغيير الكابستور، وحل مشكلات تسريب المياه وضعف التبريد بضمان معتمد.",
           "offers": {
-            "@type": "Offer",
-            "price": "100",
+            "@type": "AggregateOffer",
+            "lowPrice": "80",
+            "highPrice": "450",
             "priceCurrency": "SAR",
+            "offerCount": "8",
             "availability": "https://schema.org/InStock",
             "url": "https://mastercoolhvac.com/ac-maintenance-in-jeddah/"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "كتالوج خدمات صيانة وتصليح المكيفات بجدة",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "فحص وتشخيص أعطال المكيف المنزلي بجدة"
+                },
+                "price": "80",
+                "priceCurrency": "SAR",
+                "description": "فحص كهروميكانيكي شامل بالكمبيوتر والملتيميتر وساعات المانيفولد الرقمية (مجاناً عند إتمام الإصلاح)."
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "فحص واستبدال كابستور المكيف الأصلي"
+                },
+                "price": "130",
+                "priceCurrency": "SAR",
+                "description": "استبدال مكثف الإقلاع والتشغيل بكابستور أصلي مقاوم للحرارة العالية مع الضمان المعتمد."
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "صيانة وإصلاح كارت الكتروني للمكيف PCB"
+                },
+                "price": "180",
+                "priceCurrency": "SAR",
+                "description": "صيانة دوائر الباور وحساسات الحرارة وإصلاح كروت الإنفرتر لمختلف أنواع المكيفات."
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "كشف ومعالجة تهريب ولحام مواسير الفريون بالفضة"
+                },
+                "price": "150",
+                "priceCurrency": "SAR",
+                "description": "ضغط النيتروجين الجاف 300 PSI وتحديد موضع التسريب الإلكتروني ولحامه بأسياخ الفضة الأمريكية."
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "تسليك وعلاج تسريب المياه من المكيف السبليت"
+                },
+                "price": "100",
+                "priceCurrency": "SAR",
+                "description": "غسيل حوض الصرف الداخلي وتسليك مجاري التصريف بالضغط ومكافحة نمو العفن الفطري."
+              }
+            ]
           }
         },
         {
@@ -884,6 +942,8 @@
                         <h2 class="text-xl font-bold text-primary">دليل صيانة المكيفات</h2>
                     </div>
                     <ul class="space-y-2 text-sm max-h-[75vh] overflow-y-auto pr-1">
+                        <li><a href="#ac-calculator-widget"
+                                class="nav-item block py-2.5 px-3 rounded-lg text-secondary font-bold text-sm bg-blue-50/80 border border-blue-200 shadow-sm"><i class="fas fa-calculator text-secondary ml-1.5"></i>احسب تكلفة الصيانة فوراً</a></li>
                         <li><a href="#when-maintenance"
                                 class="nav-item active block py-2.5 px-3 rounded-lg text-primary font-medium">علامات طلب الصيانة العاجلة</a></li>
                         <li><a href="#error-codes"
@@ -1011,6 +1071,9 @@
                 </div>
 
                 <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 space-y-12">
+
+                    <!-- Interactive Instant Price Calculator Widget -->
+                    <div id="ac-calculator-widget" class="mb-10"></div>
 
                     <!-- Section 1: متى يحتاج المكيف إلى صيانة عاجلة؟ -->
                     <section id="when-maintenance" class="content-section">
@@ -1722,7 +1785,7 @@
                             <h2 class="text-2xl md:text-3xl font-bold text-primary">دليل أسعار صيانة وتصليح المكيفات بجدة لعام 2026</h2>
                         </div>
                         <p class="text-gray-700 leading-relaxed mb-4">
-                            نؤمن في ماستر كوول بالشفافية المطلقة في التسعير دون أي رسوم مخفية أو مفاجآت بعد إتمام العمل. يوضح هذا الجدول متوسط أسعار الصيانة المعتمدة في جدة لعام 2026:
+                            نؤمن في ماستر كوول بالشفافية المطلقة في التسعير دون أي رسوم مخفية أو مفاجآت بعد إتمام العمل. يوضح هذا الجدول متوسط أسعار الصيانة المعتمدة في جدة لعام 2026، كما يمكنك أيضاً الاطلاع على دليل <a href="../ac-cleaning-prices-jeddah/" class="text-secondary font-bold hover:underline">أسعار تنظيف المكيفات بجدة</a> لمعرفة أحدث باقات الغسيل والتعقيم وعروض الخصم:
                         </p>
                         <div class="overflow-x-auto mb-6">
                             <table class="comparison-table text-right">
@@ -2151,15 +2214,39 @@
                         </div>
                     </section>
 
-                    <!-- Final CTA -->
-                    <div class="bg-primary rounded-xl shadow-lg p-8 text-center text-white mt-8">
-                        <h3 class="text-2xl md:text-3xl font-black mb-4">بحاجة إلى أفضل شركة صيانة مكيفات بجدة الآن؟</h3>
-                        <p class="text-lg mb-6 text-white/90">فريق مهندسي وفنيي ماستر كوول مجهز للوصول إليك فوراً وفحص وإصلاح كافة أعطال المكيف مع الضمان المعتمد على مدار 24 ساعة.</p>
-                        <div class="flex flex-wrap justify-center gap-4">
-                            <a href="tel:0561110020" class="bg-secondary text-white py-3.5 px-8 rounded-xl font-bold hover:bg-secondaryDark transition duration-300 flex items-center gap-2 shadow-lg"><i class="fas fa-phone-alt ml-2"></i>اتصل الآن 0561110020</a>
-                            <a href="https://wa.me/966561110020" target="_blank" rel="noopener noreferrer" class="bg-green-600 text-white py-3.5 px-8 rounded-xl font-bold hover:bg-green-700 transition duration-300 flex items-center gap-2 shadow-lg"><i class="fab fa-whatsapp ml-2"></i>واتساب مباشر 24/7</a>
+                    <!-- Final CTA Conversion Section -->
+                    <div class="my-14 bg-gradient-to-r from-primaryDark via-primary to-blue-900 rounded-3xl p-8 md:p-12 text-white shadow-2xl text-center relative overflow-hidden">
+                        <div class="absolute -right-16 -top-16 w-56 h-56 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
+                        <div class="absolute -left-16 -bottom-16 w-56 h-56 bg-secondary/20 rounded-full blur-2xl pointer-events-none"></div>
+                        
+                        <span class="inline-block bg-white/10 text-amber-300 text-xs md:text-sm font-bold px-4 py-1.5 rounded-full mb-4 border border-white/20">
+                            <i class="fas fa-bolt text-amber-300 ml-1"></i> طوارئ صيانة مكيفات بجدة 24/7
+                        </span>
+                        
+                        <h3 class="text-2xl md:text-4xl font-extrabold mb-4 leading-tight">
+                            مكيفك عطلان أو تبريده ضعيف؟ احجز أفضل فني صيانة بجدة الآن
+                        </h3>
+                        <p class="text-blue-100 max-w-2xl mx-auto mb-8 text-base md:text-lg">
+                            فحص كهروميكانيكي فوري بأحدث أجهزة القياس الرقمية، معالجة فورية للأعطال، قطع غيار أصلية 100% بالكرتونة، وضمان كتابي معتمد يصل إلى 6 أشهر!
+                        </p>
+                        
+                        <div class="flex flex-wrap items-center justify-center gap-4">
+                            <a href="tel:0561110020" class="inline-flex items-center justify-center gap-3 bg-secondary hover:bg-secondaryDark text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl transition-all duration-300 hover:scale-105">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>اتصل الآن: 0561110020</span>
+                            </a>
+                            <a href="https://wa.me/966561110020?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B7%D9%84%D8%A8%20%D9%81%D9%86%D9%8A%20%D8%B5%D9%8A%D8%A7%D9%86%D8%A9%20%D9%85%D9%83%D9%8A%D9%81%D8%A7%D8%AA%20%D8%A8%D8%AC%D8%AF%D8%A9" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl transition-all duration-300 hover:scale-105">
+                                <i class="fab fa-whatsapp text-2xl"></i>
+                                <span>واتساب فوري 24 ساعة</span>
+                            </a>
                         </div>
-                        <p class="text-white/80 mt-4 text-sm font-semibold">خدمة فورية وشاملة في جميع أحياء مدينة جدة خلال 30 دقيقة</p>
+                        
+                        <div class="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center justify-center gap-6 text-xs md:text-sm text-blue-200">
+                            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> وصول خلال 30 إلى 60 دقيقة</span>
+                            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> ضمان معتمد حتى 6 أشهر</span>
+                            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> قطع غيار أصلية بالكرتونة</span>
+                            <span class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> كشف مجاني عند الإصلاح</span>
+                        </div>
                     </div>
 
                 </div>
@@ -2228,6 +2315,10 @@
                         <li><a href="../ac-maintenance-in-jeddah/" class="footer-link group"><i
                                     class="fas fa-tools text-xs group-hover:scale-110 transition-transform"></i>صيانة
                                 وإصلاح المكيفات</a></li>
+                        <li><a href="../split-ac-maintenance-jeddah/" class="footer-link group"><i
+                                    class="fas fa-screwdriver-wrench text-xs group-hover:scale-110 transition-transform"></i>صيانة مكيفات سبليت</a></li>
+                        <li><a href="../ac-cleaning-prices-jeddah/" class="footer-link group"><i
+                                    class="fas fa-tags text-xs group-hover:scale-110 transition-transform"></i>أسعار تنظيف المكيفات بجدة</a></li>
                         <li><a href="../freon-charging-jeddah/" class="footer-link group"><i
                                     class="fas fa-gas-pump text-xs group-hover:scale-110 transition-transform"></i>شحن
                                 فريون المكيفات</a></li>
@@ -2292,7 +2383,7 @@
             <div class="border-t border-gray-700/50 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                     <div class="text-center md:text-right">
-                        <p class="text-gray-400">© 2024 <span class="text-white font-semibold">ماستر كوول</span>. جميع
+                        <p class="text-gray-400">© 2026 <span class="text-white font-semibold">ماستر كوول</span>. جميع
                             الحقوق محفوظة.</p>
                         <div class="flex justify-center md:justify-start gap-4 mt-2">
                             <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors text-sm">سياسة
@@ -2403,6 +2494,20 @@
                     }
                 });
             });
+        });
+    </script>
+    <!-- Interactive Price & Maintenance Calculator -->
+    <script src="../assets/js/calculator.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Preset calculator to Maintenance service
+            setTimeout(function () {
+                var calcService = document.getElementById('calc-service');
+                if (calcService) {
+                    calcService.value = 'maintenance';
+                    calcService.dispatchEvent(new Event('change'));
+                }
+            }, 100);
         });
     </script>
     <!-- Services Data & Dropdown Generator -->
